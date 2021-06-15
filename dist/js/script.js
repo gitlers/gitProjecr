@@ -1,4 +1,4 @@
-
+/* 
 
 let number = 5;
 console.log(number);
@@ -18,7 +18,7 @@ console.log(human["name"])
 let arr = [1, 2, 3, 4, 'asdads'];
 for(i in arr){
     console.log(arr[i])
-}
+} */
 /* console.log(typeof('hello'));
 const res = confirm('ti idor?');
 const res2 = prompt('ti idor?', '');
