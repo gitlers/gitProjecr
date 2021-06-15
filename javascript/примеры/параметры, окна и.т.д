@@ -1,0 +1,27 @@
+        // эллементы
+    const boxTab = document.querySelector('.tabheader');
+    console.log(boxTab.clientWidth); // получаем ширину эллемента без марджинов и паддингов
+    console.log(boxTab.clientHeight); // получаем высоту эллемента без марджинов и паддингов
+
+    console.log(boxTab.offsetWidth); // получаем ширину эллемента без марджинов и паддингов но со скролом
+    console.log(boxTab.offsetHeight); // получаем высоту эллемента без марджинов и паддингов но со скролом
+
+
+    console.log(boxTab.scrollHeight); // получаем высоту эллемента без марджинов и паддингов но со скролом и всю длину проскралливоемого элемента
+    console.log(boxTab.scrollTop); // покажет сколько пользователь уже пролистал 
+
+    console.log(boxTab.getBoundingClientRect()); // получаем координаты элемента от левого верхнего края страницы
+    // так же можно получить только коретные значения boxTab.getBoundingClientRect().top и.т.д
+
+    const style = window.getComputedStyle(boxTab); //  метод показывает какие стили были применены к данном элементу 
+    console.log(style.display); // можно обращаться к конретному примененному стилю
+   
+
+    let a = boxTab.clientHeight*2;
+
+    boxTab.style.height = a + 'px';
+
+    console.log(document.documentElement.scrollTop); // покажет сколько поьлщователь пролистал саму страницу сайта
+    //  document.documentElement.scrollTop = 0 вернет на самый вверх тоетсь можно задавать значения 
+    // window.scrollBy(x, y); перемещает на заданное кол-во пикселей от момента где сейчас нахиодтися пользователь 
+    // window.scrollTo(x, y); перемещает на заданное кол-во пикселей от начала сайта 

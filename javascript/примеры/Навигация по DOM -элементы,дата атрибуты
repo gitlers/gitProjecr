@@ -1,0 +1,42 @@
+
+
+
+
+
+
+
+
+
+/* console.log(document.body); */
+/* console.log(document.documentElement); */
+
+/* console.log(document.body.childNodes); */ // узлы которые являются детьми у body
+/*  console.log(document.body.firstChild);  */ // первый узел у  body
+/*  console.log(document.body.lastChild); */  // второй узел  у body
+/* console.log(document.body.firstElementChild); */   // первый элемент у  body
+/* console.log(document.body.lastElementChild); */   // последний элемент у  body
+
+
+
+
+/* console.log(document.querySelector('#current').parentNode); */ // получаем родителя(узел) у выбранного элемента
+/* console.log(document.querySelector('#current').parentNode.parentNode); */ // родитель родителя(узел) элемента
+/* console.log(document.querySelector('#current').parentElement); */ // получаем родителя(эллемент) у выбранного элемент
+
+
+
+/* console.log(document.querySelector('[data-current = "3"]').nextSibling); */ // получаем следющий узел
+/* console.log(document.querySelector('[data-current = "3"]').previosSibling); */ // получаем предыдущий узел
+/* console.log(document.querySelector('[data-current = "3"]').nextElementSibling); */ // получаем следющий эллемент
+/* console.log(document.querySelector('[data-current = "3"]').previosElementSibling); */ // получаем следющий эллемент
+
+
+/* for(let node of document.body.childNodes){
+
+    if(node.nodeName == "#text"){
+        continue;
+    }else {
+        console.log(node);
+    }
+    
+} */

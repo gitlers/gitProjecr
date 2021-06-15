@@ -1,0 +1,36 @@
+        class Rect {
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+
+            calcArea () {
+                return this.width * this.height;
+            }
+
+
+        }
+
+        class ColoredRectWithText extends Rect {
+
+            constructor(height, width, text, bg) {
+                super(height, width); // вызывает конструктор родителя, всегда должен рамешаться выше всего
+                this.text = text;
+                this.bg = bg;
+            }
+
+            show () {
+                console.log(`text  =  ${this.text}, color = ${this.bg}`);
+            }
+
+        }
+        
+        const square = new Rect(2, 4);
+        const log = new Rect(20, 20);
+        console.log(square.calcArea());
+        console.log(log.calcArea());
+
+
+        const div = new ColoredRectWithText(25,10,'hello', 'red');
+        div.show();
+        console.log(div.calcArea());

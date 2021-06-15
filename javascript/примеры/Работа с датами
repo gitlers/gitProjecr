@@ -1,0 +1,29 @@
+    let now = new Date(); // присваивает текущую дату 
+    now = new Date('2020-05-01'); 
+    now = new Date(2020, 5, 1, 20);  // месяцы вдате считаются с нуля 5=6   часы учитывают часовые пояса 
+    now = new Date(0); // дата в миллисекундах
+    now = new Date();
+                                  
+    console.log(now.getFullYear()); //  получение отдельного компонента (получаем год) всегда в формате 4-х цифр
+    console.log(now.getMonth()); // получаем месяц
+    console.log(now.getDate()); // получаем день
+    console.log(now.getDay()); // получаем день недели (нумерация начинается с воскресенья ???)
+    console.log(now.getUTCHours()); // время по UTC
+
+    console.log(now.getTimezoneOffset()); // получаем разницу между часовым поясом и UTC в минутах
+    console.log(now.getTime()); // получаем кол-во миллисекунд прошедших с 1970 года , модем получить нормальную дату если пометстиь данное число в new Date() 
+
+    console.log(now.setHours(18)); // устанавливаем часы, минуты. Если поставить 40 часов он будет попровлять сам себя
+    console.log(now);
+
+    let start = new Date();
+
+    for(let i=0;i<100000;i++) {
+        let some = i**3; //возведение в степень
+    }
+    let end =new Date();
+
+    console.log(`цикл отработал ${end - start}`);
+
+
+    console.log(now);

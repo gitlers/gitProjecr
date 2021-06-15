@@ -1,0 +1,15 @@
+         const res = function (a, b, ...rest) {
+            
+            console.log(a,b,rest); // 1 ,2 [3,4,5,6,'hello']
+            
+
+         };
+        
+         res(1,2,3,4,5,6,"hello");
+
+
+
+        function calc(a, b = 2) { // по умолчанию задаем значение для b
+            console.log(a*b); // 1 ,2 [3,4,5,6,'hello']
+        }
+        calc(1);

@@ -1,0 +1,46 @@
+ const btns  = document.querySelectorAll('button'),
+       add = document.querySelector('.add');
+
+/* btn.onclick = function() {
+    alert('click');
+}; */
+/* let i=0; */
+
+
+
+const deleteElement = (event)=> {
+    console.log(event.Target);
+    console.log(event.type);
+/*     i++;
+
+    if(i==1){
+        btn.removeEventListener('click',deleteElement);
+        
+    } */
+/*     event.target.remove();
+    /* alert('click'); */ 
+};
+
+
+
+
+
+/* btn.addEventListener('click',deleteElement); */
+add.addEventListener('click',deleteElement);
+
+
+
+
+
+
+
+const link  = document.querySelector('.add__link');
+
+link.addEventListener('click',(event)=>{
+    event.preventDefault();
+    console.log(event.target);
+});
+
+btns.forEach(item =>{
+    item.addEventListener('click',deleteElement,{once:true});
+});

@@ -1,0 +1,856 @@
+
+
+@media (max-width: 800px) {
+    .container{
+        max-width: 540;
+        padding: 0 15px;
+    }
+
+    .tabcontainer{
+        max-width: 100%;
+    }
+
+    .header {
+        &__phone{
+            font-size: 17px;
+        }
+    }
+
+    .promo{
+        &__wrapper{
+            align-items: center;
+        }
+
+        &__header{
+            font-size: 35px;
+        }
+        &__subheader{
+            font-size: 17px;
+        }
+    }
+
+
+    .preview{
+        padding: 140px 0 140px 0;
+        .tabcontainer{
+
+            .tabcontent__descr{
+                top: 160px;
+                right: -53px;
+                width: 282px;
+                height: 160px;
+                padding: 24px;
+                font-size: 13px;
+                line-height: 16px;
+            }
+
+            .tabheader{
+                width: 220px;
+                height: 266px;
+                padding: 10px 9px;
+
+                &__items{
+                    margin-top: 0px;
+                    padding-left: 5px;
+                }
+
+
+                &__item{
+                    font-size: 14px;
+                    margin-top: 5px;
+
+                    &_active{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .consultation{
+        .title_left{
+            font-size: 29px;
+            margin-bottom: 1.5rem;
+        }
+
+        &__descr{
+            font-size: 22px;
+        }
+
+        .feed-form{
+            width: 260px;
+        }
+    }
+
+    .carousel{
+
+        &__inner{
+            height: 600px;
+            .carousel__item{
+                img{
+                    height: 550px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: space-around;
+            }
+        }
+
+        &__tab{
+
+            width: 550px;
+            font-size: 16px;
+            line-height: 20px;
+            &_active{
+                font-size: 16px;
+                line-height: 22px;
+            }
+        }
+    }
+
+    .feed{
+        .title{
+            font-size: 31px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            width: 500px;
+            margin-left: 0px;
+            padding-right: 0px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+
+        &__descr{
+            font-size: 17px;
+            line-height: 21px;
+            margin-top: 15px;
+        }
+    }
+
+
+}
+
+
+
+
+@media (max-width: 540px) {
+
+    
+
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tabcontainer{
+        max-width: 100%;
+    }
+
+    .consultation{
+        .title_left{
+            font-size: 24px;
+            margin-bottom: 1.5rem;
+        }
+
+        &__descr{
+            font-size: 18px;
+        }
+
+        .feed-form{
+            width: 260px;
+        }
+    }
+
+    .header {
+        &__logo{
+            img {
+                width: 100%;
+            }
+        }
+        &__phone{
+            font-size: 13px;
+        }
+        .button{
+            width: 121px;
+            font-size: 11px;
+        }
+    }
+
+
+    .promo{
+        &__header{
+            font-size: 29px;
+        }
+        &__subheader{
+            font-size: 15px;
+            margin-top: 7px;
+        }
+
+        &__wrapper {
+
+            margin-top: 57px;
+            align-items: center;
+        }
+
+        &__icons{
+            margin-top: 62px;
+            width: 400px;
+
+        }
+
+        &__icon{
+            font-size: 15px;
+        }
+
+        .button_main{
+            margin-top: 70px;
+            width: 300px;
+            font-size: 15px;
+        }
+
+        &__link{
+            font-size: 17px;
+        }
+
+    }
+
+
+    .preview{
+        padding: 140px 0 140px 0;
+        .tabcontainer{
+            .tabcontent__descr{
+                top: 160px;
+                right: -53px;
+                width: 260px;
+                height: 137px;
+                padding: 17px;
+                font-size: 12px;
+                line-height: 16px;
+            }
+
+            .tabheader{
+                width: 265px;
+                height: 250px;
+                padding: 10px 9px;
+
+                &__items{
+                    margin-top: 0px;
+                    padding-left: 5px;
+                }
+
+
+                &__item{
+                    font-size: 14px;
+                    margin-top: 5px;
+
+                    &_active{
+                        font-size: 14px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .carousel{
+
+        &__inner{
+            height: 450px;
+            .carousel__item{
+                img{
+                    height: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: center;
+            }
+        }
+
+        &__tab{
+
+            width: 550px;
+            font-size: 13px;
+            line-height: 20px;
+            &_active{
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .feed{
+        .title{
+            font-size: 24px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            width: 300px;
+            margin-left: 0px;
+            padding-right: 0px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+
+        &__descr{
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 15px;
+        }
+    }
+
+    .footer{
+        &__info{
+            width: 100%;
+        }
+        &__addr{
+            font-size: 24px;
+        }
+        &__phone{
+            font-size: 24px;
+        }
+    }
+
+    .modal{
+        width: 346px;
+        padding: 38px 28px 40px 28px;
+        &__close{
+            top: 0px;
+            right: -30px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__descr{
+            font-size: 14px;
+        }
+        .feed-form_mt25{
+            width: 284px;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 415px) {
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tabcontainer{
+        max-width: 100%;
+    }
+
+
+
+    .header {
+        &__logo{
+            img {
+                width: 140%;
+            }
+        }
+        &__phone{
+            font-size: 13px;
+        }
+        .button{
+            width: 121px;
+            font-size: 11px;
+        }
+    }
+
+
+    .promo{
+        &__header{
+            font-size: 25px;
+        }
+        &__subheader{
+            font-size: 13px;
+            margin-top: 7px;
+        }
+
+        &__wrapper {
+
+            margin-top: 57px;
+            align-items: center;
+        }
+
+        &__icons{
+            margin-top: 62px;
+            width: 362px;
+
+        }
+
+        &__icon{
+            font-size: 14px;
+        }
+
+        .button_main{
+            margin-top: 70px;
+            width: 277px;
+            font-size: 14px;
+        }
+
+        &__link{
+            font-size: 15px;
+        }
+
+    }
+    
+
+
+    .preview{
+        padding: 140px 0 140px 0;
+        .tabcontainer{
+            .tabcontent__descr{
+                top: 160px;
+                right: -53px;
+                width: 220px;
+                height: 137px;
+                padding: 12px;
+                font-size: 11px;
+                line-height: 16px;
+            }
+
+            .tabheader{
+                height: 250px;
+                padding: 10px 9px;
+
+                &__items{
+                    margin-top: 0px;
+                    padding-left: 5px;
+                }
+
+
+                &__item{
+                    font-size: 12px;
+                    margin-top: 5px;
+
+                    &_active{
+                        font-size: 12px;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    .consultation{
+        .title_left{
+            font-size: 22px;
+            margin-bottom: 1.5rem;
+        }
+
+        &__descr{
+            font-size: 18px;
+        }
+
+        .feed-form{
+            width: 260px;
+        }
+    }
+
+    .carousel{
+
+        &__inner{
+            height: 450px;
+            .carousel__item{
+                img{
+                    height: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: center;
+            }
+        }
+
+        &__tab{
+
+            width: 350px;
+            font-size: 11px;
+            line-height: 20px;
+            &_active{
+                font-size: 11px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .feed{
+        .title{
+            font-size: 24px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            width: 280px;
+            margin-left: 0px;
+            padding-right: 0px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+
+        &__descr{
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 15px;
+        }
+    }
+    .footer{
+        &__info{
+            width: 100%;
+        }
+        &__addr{
+            font-size: 22px;
+        }
+        &__phone{
+            font-size: 24px;
+        }
+    }
+
+    .modal{
+        width: 345px;
+        padding: 38px 25px 40px 25px;
+        &__close{
+            top: 5px;
+            right: 4px;
+        }
+        &__subtitle{
+            font-size: 18px;
+        }
+
+        &__descr{
+            font-size: 14px;
+        }
+        .feed-form_mt25{
+            width: 295px;
+        }
+    }
+
+}
+
+
+
+
+@media (max-width: 370px) {
+
+
+
+
+
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .tabcontainer{
+        max-width: 100%;
+    }
+
+
+
+    .consultation{
+        .title_left{
+            font-size: 22px;
+            margin-bottom: 1.5rem;
+        }
+
+        &__descr{
+            font-size: 15px;
+        }
+
+        .feed-form{
+            width: 260px;
+        }
+    }
+
+
+
+    .header {
+        &__logo{
+            img {
+                width: 175%;
+            }
+        }
+        &__phone{
+            font-size: 13px;
+        }
+        .button{
+            width: 121px;
+            font-size: 11px;
+        }
+    }
+
+
+    .promo{
+        &__header{
+            font-size: 22px;
+        }
+        &__subheader{
+            font-size: 11px;
+            margin-top: 7px;
+        }
+
+        &__wrapper {
+
+            margin-top: 57px;
+            align-items: center;
+        }
+
+        &__icons{
+            margin-top: 62px;
+            width: 322px;
+
+        }
+
+        &__icon{
+            font-size: 11px;
+        }
+
+        .button_main{
+            margin-top: 70px;
+            width: 262px;
+            font-size: 13px;
+        }
+
+        &__link{
+            font-size: 14px;
+        }
+
+    }
+
+
+
+    .preview{
+
+        .tabcontainer{
+            .tabcontent__descr{
+                top: 156px;
+                right: -53px;
+                width: 200px;
+                height: 124px;
+                padding: 12px;
+                font-size: 9px;
+                line-height: 16px;
+            }
+
+            .tabheader{
+                padding: 10px 9px;
+
+                &__items{
+                    margin-top: 0px;
+                    padding-left: 5px;
+                }
+
+
+                &__item{
+                    font-size: 9px;
+                    margin-top: 5px;
+
+                    &_active{
+                        font-size: 9px;
+                    }
+                }
+
+            }
+
+
+
+        }
+
+    }
+
+
+    .carousel{
+        .title_mb20{
+            font-size: 25px;
+        } 
+        &__inner{
+            height: 450px;
+            .carousel__item{
+                img{
+                    height: 400px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: center;
+            }
+        }
+
+        &__tab{
+
+            width: 350px;
+            font-size: 10px;
+            line-height: 20px;
+            &_active{
+                font-size: 10px;
+                line-height: 20px;
+            }
+        }
+    }
+
+
+    .feed{
+        .title{
+            font-size: 24px;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__text{
+            text-align: center;
+            width: 250px;
+            margin-left: 0px;
+            padding-right: 0px;
+        }
+        &__subtitle{
+            margin-top: 20px;
+        }
+
+        &__descr{
+            font-size: 14px;
+            line-height: 16px;
+            margin-top: 15px;
+        }
+    }
+    .footer{
+        &__info{
+            width: 100%;
+        }
+        &__addr{
+            font-size: 17px;
+        }
+        &__phone{
+            font-size: 21px;
+        }
+        .footer__social-item{
+            margin: 0 7px;
+            img{
+                height: 23px;
+            }
+        }
+
+        
+    }
+
+    .modal{
+        width: 310px;
+        padding: 38px 13px 40px 13px;
+        &__close{
+            top: 5px;
+            right: 3px;
+        }
+        &__subtitle{
+            font-size: 17px;
+        }
+
+        &__descr{
+            font-size: 14px;
+        }
+        .feed-form_mt25{
+            width: 284px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 351px) {
+
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    .catalog{
+        &__content{
+            &_active{
+                justify-content: center;
+            }
+        }
+
+        &__tab{
+
+            width: 350px;
+            font-size: 9px;
+            line-height: 20px;
+            &_active{
+                font-size: 9px;
+                line-height: 20px;
+            }
+        }
+    }
+
+}

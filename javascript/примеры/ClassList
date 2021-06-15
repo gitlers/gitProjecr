@@ -1,0 +1,37 @@
+    const btnList = document.querySelector('button'),
+          wrapper = document.querySelector('.add');
+    console.log(btnList.classList.length); // узнаем сколько классов у данного эллемента
+    console.log(btnList.classList.item(0)); // получаем первый класс у данного эллемента 
+    console.log(btnList.classList.add('black', 'green')); // добовляет класс или классы к элементу
+    console.log(btnList.classList.remove('black')); // удаляет класс у элемента
+    console.log(btnList.classList.toggle('black')); // если класса нету то добовляет класс ,если есть то удаляет
+
+    
+
+    if (btnList.classList.contains('white')) { // проверяет содердится класс в эллементе
+        console.log('white');
+    } else {
+        console.log('hello');
+    }
+
+
+    //делегирование событий  
+
+/*     wrapper.addEventListener('click', (event) =>{
+        if (event.target && event.target.classList.contains("green")) {
+            console.log('hello');
+        }
+    }); */
+
+    wrapper.addEventListener('click', (event) =>{    
+        // вместо tagName  можно исспользовать matches('button.red') можно без указания класса . Этот метод ишет совпадение
+        if (event.target && event.target.tagName == 'BUTTON') { // если в этой обертке мы кликнули на кнопку  то она будет выполнять действия которыйы мы прописали не зависими от того когда мы создали эту кнопку так как это все мы задали обертке
+            event.preventDefault();
+            console.log('hello');
+        }
+    });
+
+    const b = document.createElement('button'); // создаем эллемент 
+    /* b.classList.add('full'); */
+    wrapper.append(b); // добовляем эллемент 
+    b.style.background = 'blue';

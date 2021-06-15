@@ -1,0 +1,21 @@
+    const btn  = document.querySelector('.header__right-block button');
+
+
+    const timerId  = setTimeout(function(text) {   // в timerId лежит таймер (цифровой индентификатор)
+        console.log(text);
+    },2000, 'hello');
+
+
+    btn.addEventListener('click',(event)=>{
+        clearInterval(timerId); // останавливаем таймер */
+        clearInterval(interval);
+    });
+
+
+
+    function hello() {
+        console.log('hello');
+    }
+    
+    const timerId2  = setTimeout(hello, 2000);
+    const interval = setInterval(hello,2000); // будет выполняться через указанный интервал

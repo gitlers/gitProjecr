@@ -1,0 +1,52 @@
+        // modal
+
+    const modals = document.querySelectorAll('[data-modal]'),
+          modalsContent = document.querySelector('.modal'),
+          modalsClose = document.querySelector('[data-close]');
+
+          function moveScrol () {
+            modalsContent.style.display = 'none';
+            document.body.style.overflow = 'visible'; // разрешает скролить сайт */
+          }
+
+          function showModal () {
+                modalsContent.style.display = 'block';
+                document.body.style.overflow = 'hidden'; // запрещаем скролить сайт когда модальное окно октрыто
+              }
+          
+
+          function showModalByScroll () {
+                if (document.documentElement.scrollTop >= 3500) {
+                    showModal ();
+                    window.removeEventListener('scroll', showModalByScroll); // удялть можно только явные функции колбек не подойдет
+                }
+             }
+
+
+
+          modalsContent.addEventListener('click', (event)=>{   // если кликаем на подложку то окно закрывается
+                if (event.target.classList == "modal") {
+                    moveScrol ();
+                }
+          });
+
+
+          modals.forEach((item)=>{
+                item.addEventListener('click',()=>{
+                    showModal (); 
+                });
+          });
+
+
+         modalsClose.addEventListener('click', moveScrol);
+       
+
+         document.addEventListener('keydown',(event)=>{
+            if ( event.code === "Escape" && modalsContent.style.display == 'block') {   // https://keycode.info/  это про все коды
+                moveScrol();
+            }
+         });
+
+
+
+         window.addEventListener('scroll', showModalByScroll);

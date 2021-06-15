@@ -1,0 +1,68 @@
+         function showThis(a, b) {
+             console.log(this);
+             function sum() {
+                 console.log(this);
+                return a + b;
+             }
+             console.log(sum());
+         }
+         showThis(1, 2);
+
+        const obj ={
+            a: 20,
+            b: 15,
+            sum: function() {
+                console.log(this);
+            }
+         };
+
+        obj.sum();
+
+        function sayName(surname) {
+            console.log(this);
+            console.log(this.name + surname);
+        }
+        const us ={
+            name: 'jhon'
+        };
+
+        sayName.call(us, 'pashok'); 
+        sayName.apply(us, ['smith']);
+
+        function count(num) {
+            return this * num;
+        }
+
+        const double = count.bind(2);
+        console.log(double(3)); */
+
+        const b = document.querySelector('button');
+        b.addEventListener('click', function(){ // когда в классическом тогда this - сам эллемент как event.target
+            console.log(this);
+        });
+
+        const obj1 = {
+            num:5 ,
+            sayNumber: function() {
+                const say = () =>{  // стрелочная функция берет контекст у родителя 
+                    console.log(this);
+                    console.log(this.num); // 5
+
+                };
+                say();
+            }
+            
+        };
+        obj1.sayNumber();
+
+
+
+
+
+        const double = (a) => a*2; // == return a * 2;
+        console.log(double(5)); // 10
+        
+         //1) Обычная функция this = window ,но если use strict - undefined
+         //2) Контекст у методов обьека - сам обьект
+         //3) this в конструктораз и классах - это новый экземпляр обьекта
+         //4) ручная привязка this - call, apply, bind

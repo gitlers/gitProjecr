@@ -1,0 +1,24 @@
+
+         function User(name, id) { // конструктор
+            this.name = name;
+            this.id = id;
+            this.human = true;
+            this.hello = function() {
+                console.log(`hello ${this.name}`);
+            };
+         } 
+
+         User.prototype.exit = function() {
+            console.log(`Пользователь ${this.name} ушел`);
+         };
+
+         const ivan  = new User('ivan', 21); // создаем новый обьект через конструктор 
+         const ivan2  = new User('ivan2', 221);
+         
+         ivan.exit();
+
+         console.log(ivan);
+         console.log(ivan2);
+
+         ivan.hello();
+         ivan2.hello();
