@@ -1,32 +1,61 @@
-/* 
-
-let number = 5;
-console.log(number);
-
-const human = {
-    name: 'evgenii',
-    endName: 'logavichin',
-    writeHello: ()=> {
-        console.log('hello man');
+function showMyDb() {
+    if(!personalMovieDB['privat']) {
+        console.log(personalMovieDB);
     }
+}
+function writeYourGenres() {
+    for(let i=0; i<3; i++) {
+        personalMovieDB['genres'][i] = prompt(`Ваш любимый жанр под номером ${i+1}`,'');
+    }
+    console.log(personalMovieDB['genres'])
+}
+
+
+
+ const numberOfFilms = prompt('Сколько фильмов вы уже посотрели?','');
+
+console.log(numberOfFilms);
+
+const personalMovieDB ={
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: true
 };
 
-console.log(human)
-console.log(human.name)
-console.log(human["name"])
+for(let i = 0; i < 2; i++){
+    film = prompt('один из просмотренных фильмов','');
+    rate = prompt('на сколько оцениваешь? ','');
+    if(film!=null && rate !=null && film.length > 0 && film.length <= 50 && rate.length > 0) {
+        personalMovieDB['movies'][film]= `: ${rate}`; 
+    } else {
+        i = 0; 
+    }
+}
+if(numberOfFilms > 5 && numberOfFilms <10) {
+    console.log("ты не киноман");
+}
+console.log(personalMovieDB['movies']);
+showMyDb();
+writeYourGenres();
 
-let arr = [1, 2, 3, 4, 'asdads'];
-for(i in arr){
-    console.log(arr[i])
-} */
-/* console.log(typeof('hello'));
-const res = confirm('ti idor?');
-const res2 = prompt('ti idor?', '');
-const arr2 = []
-arr2.push(prompt('aasd',''));
-console.log(arr2[0]); */
-/* let item = document.querySelector('.about__text');
-item.innerHTML +=`<p class="about__text">Я с детства любил компьютеры, поэтому и стал</p>`; */
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(document).ready(function(){
     $('.reviews__inner').slick({
